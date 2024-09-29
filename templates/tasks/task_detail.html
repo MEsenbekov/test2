@@ -1,0 +1,9 @@
+<!-- templates/tasks/task_detail.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>{{ task.title }}</h2>
+<p>{{ task.description }}</p>
+<p>Category: {{ task.category.name }}</p>
+<a href="{% url 'task_list' %}">Back to Task List</a>  <!-- Убедитесь, что имя здесь правильное -->
+{% endblock %}
